@@ -16,7 +16,7 @@ public class Bones extends ClickCompare
 	@Override
 	public boolean isEntryValid(MenuEntry event)
 	{
-		return event.getOpcode() == MenuAction.GAME_OBJECT_FIRST_OPTION.getId() && !event.isForceLeftClick() &&
+		return event.getOpcode() == MenuAction.GAME_OBJECT_SECOND_OPTION.getId() && !event.isForceLeftClick() &&
 			event.getTarget().toLowerCase().contains("sandpit");
 	}
 
@@ -37,7 +37,7 @@ public class Bones extends ClickCompare
 	@Override
 	public boolean isClickValid(MenuOptionClicked event)
 	{
-		return event.getMenuAction() == MenuAction.GAME_OBJECT_FIRST_OPTION &&
+		return event.getMenuAction() == MenuAction.GAME_OBJECT_SECOND_OPTION &&
 			event.getMenuTarget().contains("<col=ff9040>Bucket<col=ffffff> -> ") &&
 			event.getMenuTarget().toLowerCase().contains("sandpit");
 	}
