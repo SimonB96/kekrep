@@ -10,9 +10,8 @@ import net.runelite.client.plugins.externals.oneclick.comparables.ClickCompare;
 
 public class Bones extends ClickCompare
 {
-	private static final Set<Integer> BONE_SET = ImmutableSet.of(
-		ItemID.BUCKET
-	);
+	private static final Set<Integer> BONE_SET = ItemID.BUCKET;
+
 
 	@Override
 	public boolean isEntryValid(MenuEntry event)
